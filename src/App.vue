@@ -1,16 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <BaseCounter />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import BaseCounter from "./components/BaseCounter.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    BaseCounter,
   },
 });
 </script>
@@ -23,5 +22,10 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+/* XSTATE */
+iframe {
+  width: 100%;
+  height: 100vh;
 }
 </style>
